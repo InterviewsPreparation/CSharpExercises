@@ -23,27 +23,27 @@ class Result
 
     public static void plusMinus(List<int> arr)
     {
-        float positiveRatio=0.0f, zeroRatio=0.0f, negativeRatio=0.0f;
-       foreach(var arrElement in arr)
-       {   
-           switch(Math.Sign(arrElement))
-           {
-               case 1:
-               positiveRatio++;
-               break;
-               case 0:
-               zeroRatio++;
-               break;
-               case -1:
-               negativeRatio++;
-               break;
-           }            
+        float positiveRatio = 0.0f, zeroRatio = 0.0f, negativeRatio = 0.0f;
+        foreach (var arrElement in arr)
+        {
+            switch (Math.Sign(arrElement))
+            {
+                case 1:
+                    positiveRatio++;
+                    break;
+                case 0:
+                    zeroRatio++;
+                    break;
+                case -1:
+                    negativeRatio++;
+                    break;
+            }
         }
         //Computing Ratios
-        positiveRatio = positiveRatio/arr.Count;
-        zeroRatio = zeroRatio/arr.Count;
-        negativeRatio = negativeRatio/arr.Count;
-        
+        positiveRatio = positiveRatio / arr.Count;
+        zeroRatio = zeroRatio / arr.Count;
+        negativeRatio = negativeRatio / arr.Count;
+
         //Printing Ratios
         Console.WriteLine(positiveRatio.ToString("0.000000"));
         Console.WriteLine(negativeRatio.ToString("0.000000"));
